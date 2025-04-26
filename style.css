@@ -1,0 +1,85 @@
+  /* Imagem de fundo para o site todo */
+  body {
+    background-image: url('img/fundo.2.png');  /* Substitua com o caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* Faz a imagem de fundo ficar fixa enquanto rola a página */
+    height: 100%; /* Altura total da página */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+
+/* Garantir que o conteúdo esteja por cima da imagem */
+.content {
+    z-index: 10;
+    position: relative;
+}
+
+/* Personalizar a navbar para que ela fique por cima do fundo */
+.navbar {
+    z-index: 20;
+    position: relative;
+}
+
+/* Adicionando uma camada de fundo semitransparente para melhorar a legibilidade do texto */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);  /* Ajuste a opacidade conforme necessário */
+    padding: 50px;
+}
+
+
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #040404e9; /* Cor de fundo escura */
+    color: #fffefe; /* Texto branco */
+    padding: 8px 0; /* Padding superior e inferior */
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px; /* Tamanho da fonte */
+    margin-top: 50px; /* Espaço acima do rodapé */
+    width: 100%; /* Largura total */
+    position:relative; /* Posição relativa para o rodapé */
+    bottom: 0; /* Fixa o rodapé na parte inferior da página */
+}
+
+footer a {
+    color: #f9f6f6; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Margem entre os links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+.social-icons {
+    margin-top: 10px; /* Espaço acima dos ícones sociais */
+}
+
+.social-icons a {
+    font-size: 20px; /* Tamanho dos ícones */
+    margin: 0 10px; /* Margem entre os ícones */
+}
+
+html,body{
+    height: 100%;
+}
+
+.card-transparente{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.348); /* Borda branca com opacidade */
+}
+
+.card-transparente, .card-title{
+    color: rgb(11, 11, 11); /* Cor do texto preto */
+}
+ .card-transparente, .card-text{
+    color: rgb(11, 11, 11)!important; /* Cor do texto preto */
+}
+
+.social-icons a:hover {
+    color: #0073e6; /* Cor ao passar o mouse (azul claro) */
+}
